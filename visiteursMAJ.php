@@ -20,31 +20,9 @@ foreach ($pays as $text)
 
 if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE)
 {
-    echo "<script type=\"text/javascript\"> alert('Hi');</script><br/>';
+    echo "<script type=\"text/javascript\"> alert('Vous utilisez IE? Pensez Open Source = Mozilla Firefox!');</script><br/>";
 }
 
 
 
-
-$valid="valid";
-    if(!isset($valid))
-        echo "<script type=\"text/javascript\"> alert('Hi');</script>";
-
-
-
-
-
-<script type="text/javascript">
-    $valid="valid";
-    if(!isset($valid))
-        echo "alert('Hi');";
-</script>
-
-
-
-
-$file = 'your_images.jpg';
-
-header('Content-Type: image/jpeg');
-header('Content-Length: ' . filesize($file));
-echo file_get_contents($file);
+echo '<img src="tux_eats_android-580x456.jpg">';
