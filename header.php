@@ -8,4 +8,8 @@
 &nbsp;
 <a href="allo.php">Allo =D</a>
 &nbsp;
+<a href="form.php">Formulaire avec cookie</a>
+&nbsp;
+<a href="login.php">Login vers une page mystere</a>
+&nbsp;
 </body></html>
