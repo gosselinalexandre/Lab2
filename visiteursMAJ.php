@@ -5,6 +5,10 @@
  * Time: 13:00
  */
 
+include ("header.php");
+
+echo '<br/><br/>';
+
 $userfile= file_get_contents("Pays.txt");
 $pays = explode("\n",$userfile);
 sort($pays);
