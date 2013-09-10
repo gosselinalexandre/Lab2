@@ -1,12 +1,13 @@
 <?php
 /**
- * Created by JetBrains PhpStorm.
  * User: administrateur
  * Date: 13-09-06
  * Time: 13:00
- * To change this template use File | Settings | File Templates.
  */
 
+include ("header.php");
+
+echo '<br/><br/>';
 
 $userfile= file_get_contents("Pays.txt");
 $pays = explode("\n",$userfile);
@@ -16,13 +17,9 @@ foreach ($pays as $text)
     echo $text . "<br/>";
 }
 
-
-
 if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE)
 {
     echo "<script type=\"text/javascript\"> alert('Vous utilisez IE? Pensez Open Source = Mozilla Firefox!');</script><br/>";
 }
-
-
 
 echo '<img src="tux_eats_android-580x456.jpg">';
